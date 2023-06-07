@@ -1,0 +1,11 @@
+{% block subtitle %} {% endblock subtitle %}
+
+{% block content%}
+{% for video in videos %}
+<div>
+  <h2>{{ video.title }}</h2>
+  <img src="{{ video.cover_url }}" />
+  <p>{{ video.description }}</p>
+</div>
+{% endfor %}
+{% endblock content %}
